@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="myStrategyn Study" />
+    <title>my survey</title>
+    <link href="css/main.css" rel="stylesheet" />
+
+    <script>
+      (function () {
+        const lastPageHash = "#/lessons/oEYJBWU1eV7bNG2WZRrDpEbxb4BPzuiB";
+        const continueBtnText = "CONTINUE STUDY";
+        // Document on load
+        document.addEventListener("DOMContentLoaded", function () {
+          // Handle iframe-course onload event
+          const iframeCourse = document.getElementById("iframe-course");
+          iframeCourse.addEventListener("load", () => {
+            const iframeCourseDoc = iframeCourse.contentDocument;
+            const iframeCourseBody = iframeCourseDoc.body;
+            iframeCourseBody.addEventListener("click", (e) => {
+              // Check if the clicked element has class continue-btn
+              const btn = e.target;
+              if (
+                btn.classList.contains("continue-btn") &&
+                btn.innerHTML === continueBtnText
+              ) {
+                if (iframeCourse.contentWindow.location.hash === lastPageHash) {
+                  e.preventDefault();
+                  document.getElementById(
+                    "iframe-needs-wrapper"
+                  ).style.display = "flex";
+                  document.getElementById(
+                    "iframe-typeform-wrapper"
+                  ).style.display = "flex";
+                  document.getElementById("divTools").style.display = "block";
+                  document.getElementById("divJTBD").style.display = "block";
+                  setTimeout(() => {
+                    document
+                      .getElementById("divTools")
+                      .scrollIntoView({ behavior: "smooth" });
+                  }, 100);
+                }
+              }
+            });
+          });
+        });
+      })();
+    </script>
+  </head>
+  <body>
+    <header class="clearfix">
+      <div class="wrap mt-80 mb-80">
+        <div class="row mb-54">
+          <div class="col col-53 float-left">
+            <div class="logo mb-44">
+              <img
+                src="images/logo.svg"
+                alt="Strategyn survey"
+                width="220"
+                height="63"
+              />
+            </div>
+            <h2 class="desc mb-12">Welcome to the Perceptions of</h2>
+            <h1 class="slg mb-39">
+              <span class="fontpurple">myStrategyn</span> Study
+            </h1>
+            <div class="headdash mb-44"></div>
+            <div class="clearfix"></div>
+            <p class="pera mb-44">
+              This study is designed to help us learn about people’s perceptions
+              of myStrategyn, our JTBD & ODI platform that facilitates the work
+              of current and aspiring ODI Practitioners.
+            </p>
+            <div class="alertbox">
+              <div class="icon">
+                <img
+                  src="images/icon-clock.svg"
+                  alt="Alert"
+                  width="16"
+                  height="22"
+                />
+              </div>
+              <div class="alerttext">
+                The study will take approximately 20 minutes to complete.
+              </div>
+            </div>
+          </div>
+
+          <div class="col col-44 float-right">
+            <div class="studyimg">
+              <img
+                src="images/header-img.png"
+                width="460"
+                height="509"
+                alt="myStrategyn Study"
+              />
+            </div>
+          </div>
+        </div>
+
+        <hr class="divider mt-0 mb-80" />
+        <div class="row">
+          <div class="col col-47 float-left">
+            <h4 class="smalltitle mb-12">This study is designed in 3 Parts:</h4>
+            <ol>
+              <li>Explanation of the platform and how it’s set up</li>
+              <li>
+                Demos to help you understand the functionality of the platform
+              </li>
+              <li>
+                A survey to answer questions about your perceptions and interest
+                in purchasing the product
+              </li>
+            </ol>
+          </div>
+          <div class="col col-47 float-right">
+            <p>
+              All responses are anonymous. To protect your anonymity, your name
+              will not be collected or attached to any data. You will be
+              identified instead with an ID code. All data will have no personal
+              identifiers and will be stored securely on Strategyn’s servers, to
+              which only research team members will have access.
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="section1 purple clearfix">
+      <div class="wrap mt-32 mb-32">
+        <div class="row">
+          <div class="col col-33 float-left">
+            <div class="numberlist clearfix">
+              <div class="numbers"><div>1</div></div>
+              <div class="numdesc">
+                <p>Please complete the survey in one session.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col col-33 float-left">
+            <div class="numberlist clearfix">
+              <div class="numbers"><div>2</div></div>
+              <div class="numdesc">
+                <p>
+                  Please <strong>do not press the “Back” button</strong> on your
+                  web browser, as this may interfere with the survey.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col col-33 float-left">
+            <div class="numberlist clearfix">
+              <div class="numbers"><div>3</div></div>
+              <div class="numdesc">
+                <p>Scroll down to begin the study.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section2 clearfix">
+      <div class="wrap mt-60 mb-60">
+        <div class="row">
+          <div class="col">
+            <div class="center">
+              <img
+                src="images/frame17.svg"
+                alt="Thank You"
+                width="78"
+                height="78"
+              />
+            </div>
+            <h3 class="ptitle mt-20 textcenter fontpurple">
+              Thank you for your valuable contribution to our research!
+            </h3>
+            <div class="secdec2">
+              <strong>myStrategyn</strong> is your JTBD and ODI platform aimed
+              at helping you learn and build the capability of Outcome-Driven
+              Innovation for you and across your organization.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section3 grey clearfix">
+      <div class="wrap mt-60 mb-80">
+        <div class="row">
+          <div class="col">
+            <h3 class="ptitle mt-20">The platform has three key components</h3>
+          </div>
+        </div>
+        <div class="row mt-40">
+          <div class="col col-33 float-left">
+            <div class="boxthree clearfix">
+              <div class="icon">
+                <img
+                  src="images/progressicon.svg"
+                  alt="Progress"
+                  width="32"
+                  height="32"
+                />
+              </div>
+              <div class="boxthreetext">
+                <h5 class="fifthheading">Community</h5>
+                <p>
+                  A community of like-minded individuals and organizations that
+                  want to communicate with others like yourself to keep up to
+                  date on the latest best practices.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col col-33 float-left">
+            <div class="boxthree clearfix">
+              <div class="icon">
+                <img
+                  src="images/progressicon2.svg"
+                  alt="Progress"
+                  width="32"
+                  height="32"
+                />
+              </div>
+              <div class="boxthreetext">
+                <h5 class="fifthheading">Training</h5>
+                <p>
+                  Courses designed at progressive levels to help understand
+                  Outcome-Driven Innovation and how to apply it within your
+                  role.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col col-33 float-left">
+            <div class="boxthree clearfix">
+              <div class="icon">
+                <img
+                  src="images/progressicon3.svg"
+                  alt="Progress"
+                  width="32"
+                  height="32"
+                />
+              </div>
+              <div class="boxthreetext">
+                <h5 class="fifthheading">Tools</h5>
+                <p>
+                  Tools to help you practice and apply Outcome-Driven
+                  Innovation.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section4 clearfix">
+      <div class="wrap mt-60 mb-60">
+        <div class="row mb-30">
+          <div class="col">
+            <h2 class="btitle mb-24">
+              Let’s look into each of these components in more detail.
+            </h2>
+            <div class="headdash mb-60"></div>
+            <div class="clearfix"></div>
+            <div class="boxthree clearfix mb-12">
+              <div class="icon">
+                <img
+                  src="images/progressicon.svg"
+                  alt="Progress"
+                  width="32"
+                  height="32"
+                />
+              </div>
+              <div class="boxthreetext">
+                <h5 class="frouthheading fontpurple">Community</h5>
+              </div>
+            </div>
+            <p>
+              Our community aims to gather like-minded individuals to discuss
+              and share best practices as you deploy Outcome-Driven Innovation.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <h4 class="smalltitle mb-12">Key Features</h4>
+            <ul>
+              <li>
+                <div>
+                  Become aware of improvements that are being made to the
+                  Outcome-Driven Innovation method within and outside your
+                  organization
+                </div>
+              </li>
+              <li>
+                <div>
+                  Share and get access to tools and templates that other ODI
+                  practitioners are using to help aid in your and their
+                  application of Outcome-Driven Innovation
+                </div>
+              </li>
+              <li>
+                <div>
+                  Get your questions answered virtually by Strategyn experts.
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr class="divider mt-60 mb-60" />
+        <div class="row mb-30">
+          <div class="col">
+            <div class="boxthree clearfix mb-12">
+              <div class="icon">
+                <img
+                  src="images/progressicon2.svg"
+                  alt="Progress"
+                  width="32"
+                  height="32"
+                />
+              </div>
+              <div class="boxthreetext">
+                <h5 class="frouthheading fontpurple">Training</h5>
+              </div>
+            </div>
+            <p class="mb-30">
+              Courses designed at progressive levels to help understand the
+              principles of Jobs-to-be-Done and Outcome-Driven Innovation and
+              how to apply them within your role.
+            </p>
+
+            <div class="table">
+              <div class="tablerow">
+                <div class="tablecol">1. Introduction</div>
+                <div class="tablecol2">
+                  Definitions/mindset – Introduce a new way of thinking about
+                  innovation
+                </div>
+              </div>
+              <div class="tablerow grey">
+                <div class="tablecol">2. Fundamentals</div>
+                <div class="tablecol2">
+                  Structure/rationale – understand why ODI will work for you
+                </div>
+              </div>
+              <div class="tablerow">
+                <div class="tablecol">3. Associates</div>
+                <div class="tablecol2">
+                  Guidelines and Rules – a model for adjustment, alignment,
+                  action
+                </div>
+              </div>
+              <div class="tablerow grey fontgrey">
+                <div class="tablecol">
+                  4. Practitioner <br />(IN DEVELOPMENT)
+                </div>
+                <div class="tablecol2">
+                  Execution – a script for putting ODI into practice
+                </div>
+              </div>
+            </div>
+
+            <div class="row mt-30">
+              <div class="col">
+                <h4 class="smalltitle mb-12">Key Features</h4>
+                <ul>
+                  <li>
+                    <div>
+                      Assess ODI against your current and other innovation
+                      methods and align your team around ODI as a common
+                      innovation method to help your organization succeed.
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      Each course level is built as a prerequisite to the one
+                      before it, so we’re building on the knowledge taught in
+                      the previous course.
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      As we develop more courses, they will be added to the
+                      platform and you will get access to them at no additional
+                      cost.
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      Badges and Certifications attached upon course completion
+                      that can be shared on your social networks
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      Monthly events focused on specific topics so you can meet
+                      with ODI practitioners, ask your questions, and get
+                      feedback on your work as they relate to those topics.
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section5 clearfix grey">
+      <div class="wrap mt-40 mb-40">
+        <div class="row">
+          <div class="col col-24">
+            <img
+              class="imgshadow"
+              src="images/frame14.png"
+              alt="Take Demo Course"
+              width="273"
+              height="273"
+            />
+          </div>
+          <div class="col col-70">
+            <div class="fifthdec">
+              <div>
+                <p class="mb-30">
+                  This first demo comes from a training module that is part of
+                  myStrategyn’s Introduction Course—the first of the four
+                  courses leading to certification as an ODI Practitioner.
+                  Please take the short demo below to help you understand what
+                  the learning experience looks like in our courses.
+                </p>
+                <a
+                  class="button"
+                  href="#iframe-course-wrapper"
+                  title="Take Demo Course"
+                  ><div>Take Demo Course</div>
+                  <div class="arrowdown">
+                    <img
+                      class=""
+                      src="images/arrow-down.svg"
+                      alt="Down"
+                      width="16"
+                      height="16"
+                    /></div
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="iframe-course-wrapper"
+      class="section6 clearfix"
+      style="
+        background: #3a1b3e;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      "
+    >
+      <iframe
+        id="iframe-course"
+        src="demo-course/index.html"
+        style="
+          display: block;
+          width: 80%;
+          height: 80vh;
+          border: 5px solid #5e2569;
+        "
+      ></iframe>
+    </div>
+
+    <div class="section7 clearfix" id="divTools" style="display: none">
+      <div class="wrap mt-60 mb-60">
+        <div class="row mb-30">
+          <div class="col">
+            <div class="boxthree clearfix mb-12">
+              <div class="icon">
+                <img
+                  src="images/progressicon3.svg"
+                  alt="Progress"
+                  width="32"
+                  height="32"
+                />
+              </div>
+              <div class="boxthreetext">
+                <h5 class="frouthheading fontpurple">Tools</h5>
+              </div>
+            </div>
+            <p class="mb-30">
+              Our tools are designed to help aid in your practice and
+              application of Outcome-Driven Innovation. We will be launching
+              with the following three tools, and have an entire pipeline of
+              future tools to add:
+            </p>
+
+            <div class="table">
+              <div class="tablerow">
+                <div class="tablecol">JTBD Needs Framework</div>
+                <div class="tablecol2">
+                  Use the JTBD Needs Framework tool to help you quickly document
+                  and understand what type of customer, job, job steps, and
+                  outcomes to study based on your innovation goals.
+                </div>
+              </div>
+              <div class="tablerow grey">
+                <div class="tablecol">Statement Checking</div>
+                <div class="tablecol2">
+                  Check your job, job steps, and outcome statements to see if
+                  they fit all the guidelines defined in the Outcome-Driven
+                  Innovation process.
+                </div>
+              </div>
+              <div class="tablerow">
+                <div class="tablecol">ODI Landscape Graphing</div>
+                <div class="tablecol2">
+                  Graph your ODI Landscape by uploading the importance and
+                  satisfaction of your outcomes, and quickly understanding what
+                  the opportunities might be.
+                </div>
+              </div>
+            </div>
+
+            <div class="row mt-30">
+              <div class="col">
+                <h4 class="smalltitle mb-12">Key Features</h4>
+                <ul>
+                  <li>
+                    <div>
+                      As we develop more tools, they will be added to the
+                      platform and you will get access to them at no additional
+                      cost.
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      Each tool will record your data and store it so you can
+                      always come back and adjust it as needed.
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      Save as many projects as you want to in each tool.
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      Quickly understand the key concepts used in Outcome-Driven
+                      Innovation and use them daily as you apply them to your
+                      role with your organization.
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section8 clearfix grey" id="divJTBD" style="display: none">
+      <div class="wrap mt-40 mb-40">
+        <div class="row">
+          <div class="col col-70">
+            <div class="fifthdec">
+              <div>
+                <p class="mb-30">
+                  Use the demo of the <strong>JTBD Needs Framework</strong> to
+                  document your innovation goals, and then use the graphic to
+                  select the parts of the framework that you would use to help
+                  fulfill your innovation goals. Play around with the demo below
+                  to help you understand what the user experience looks like in
+                  our tools.
+                </p>
+                <a
+                  class="button"
+                  href="#iframe-needs-wrapper"
+                  title="Explore Needs Framewor"
+                  ><div>Explore Needs Framework</div>
+                  <div class="arrowdown">
+                    <img
+                      class=""
+                      src="images/arrow-down.svg"
+                      alt="Down"
+                      width="16"
+                      height="16"
+                    /></div
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col col-24">
+            <img
+              class="imgshadow"
+              src="images/frame14.png"
+              alt="Explore Needs Framework"
+              width="273"
+              height="273"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="section9 clearfix"
+      id="iframe-needs-wrapper"
+      style="
+        background: #3a1b3e;
+        display: block;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      "
+    >
+      <iframe
+        id="iframe-a"
+        src="https://needsframework-xha2j7lzuq-wm.a.run.app/"
+        style="
+          display: block;
+          width: 80%;
+          height: 80vh;
+          background: white;
+          border: 5px solid #5e2569;
+        "
+      ></iframe>
+    </div>
+
+    <!-- randomization TBD =1 or =2 -->
+    <div
+      id="iframe-typeform-wrapper"
+      class="section10 clearfix"
+      style="
+        display: block;
+        background: #3a1b3e;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      "
+    >
+      <iframe
+        id="iframe-b"
+        src="https://strategynllcsurvey.typeform.com/myStrategynPrc#random_assignment=1"
+        style="
+          display: block;
+          width: 80%;
+          height: 80vh;
+          border: 5px solid #5e2569;
+        "
+      ></iframe>
+    </div>
+
+    <footer class="grey">
+      <div class="wrap">
+        <div class="row">
+          <div class="col">
+            <p>&copy; Copyright 2023 Strategyn</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
